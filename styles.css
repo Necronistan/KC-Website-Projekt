@@ -570,7 +570,27 @@ footer a {
   border: 1px solid var(--line);
   background: #171b1a;
 }
+.cup-2nav {
+  position: sticky;
+  top: 120px;
+  z-index: 4;
+  display: flex;
+  gap: 0;
+  margin: -76px 0 35px;
+  border: 1px solid var(--line);
+  background: #171b1a;
+}
 .cup-nav a {
+  flex: 1;
+  padding: 12px 16px;
+  border-right: 1px solid var(--line);
+  color: #cdd2cc;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.cup-2nav a {
   flex: 1;
   padding: 12px 16px;
   border-right: 1px solid var(--line);
@@ -586,6 +606,33 @@ footer a {
 .cup-nav a:hover, .cup-nav a.active {
   background: var(--yellow);
   color: #171a17;
+}
+.group-switcher {
+  display: inline-flex;
+  margin: 35px 0 0;
+  border: 1px solid var(--line);
+  background: #171b1a;
+}
+.group-switcher button {
+  padding: 11px 20px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: #cdd2cc;
+  font: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.group-switcher button:last-child {
+  border-right: 0;
+}
+.group-switcher button:hover, .group-switcher button.active {
+  background: var(--yellow);
+  color: #171a17;
+}
+.group-panel[hidden] {
+  display: none;
 }
 .cup-hero, .cup-section {
   scroll-margin-top: 132px;
@@ -653,7 +700,7 @@ footer a {
 }
 .cup-home-links {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   padding-top: 42px;
 }
@@ -693,6 +740,51 @@ footer a {
   bottom: 13px;
   color: var(--yellow);
   font-size: 22px;
+}
+.hall-of-fame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 42px;
+}
+.hall-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+.hall-card h2 {
+  margin: 0 0 20px;
+  font-size: 27px;
+  font-weight: normal;
+}
+.podium-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.podium-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+.podium-list b {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  background: #303632;
+  color: var(--yellow);
+  font-size: 11px;
+}
+.podium-list li:first-child b {
+  background: var(--yellow);
+  color: #151816;
 }
 .cup-section {
   padding: 60px 0 0;
@@ -790,10 +882,33 @@ footer a {
 }
 .bracket {
   display: grid;
-  grid-template-columns: 1.25fr 1fr .9fr;
+  grid-template-columns: repeat(4, 250px);
   gap: 14px;
   overflow-x: auto;
   padding-bottom: 4px;
+}
+.bracket-groups {
+  display: grid;
+  gap: 50px;
+  margin-top: 28px;
+}
+.bracket-group {
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+.bracket-group:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.bracket-group h2 {
+  margin: 0 0 20px;
+  color: var(--white);
+  font-size: 27px;
+  font-weight: normal;
+}
+.bracket-group .bracket {
+  grid-template-columns: repeat(4, minmax(190px, 1fr));
+  max-width: 640px;
 }
 .bracket-round {
   display: flex;
@@ -922,7 +1037,7 @@ footer a {
     margin-top: 55px;
     padding-top: 42px;
   }
-  .team-grid, .steps, .application-steps, .cup-home-links {
+  .team-grid, .steps, .application-steps, .cup-home-links, .hall-of-fame {
     grid-template-columns: 1fr;
   }
   .cup-nav {
@@ -933,6 +1048,16 @@ footer a {
   .cup-nav a {
     padding: 11px 6px;
     font-size: 10px;
+  }
+  .group-switcher {
+    display: flex;
+    width: 100%;
+    margin-top: 28px;
+  }
+  .group-switcher button {
+    flex: 1;
+    padding: 11px 6px;
+    font-size: 11px;
   }
   .cup-hero {
     padding-top: 10px;
@@ -950,6 +1075,9 @@ footer a {
   }
   .bracket {
     grid-template-columns: 210px 210px 210px;
+  }
+  .bracket-group .bracket {
+    grid-template-columns: 210px 210px;
   }
   .rules li {
     grid-template-columns: 30px 1fr;

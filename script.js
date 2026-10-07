@@ -17,3 +17,22 @@ cupLinks.forEach((link) => link.addEventListener('click', () => {
   cupLinks.forEach((item) => item.classList.remove('active'));
   link.classList.add('active');
 }));
+
+document.querySelectorAll('.group-switcher').forEach((switcher) => {
+  const buttons = switcher.querySelectorAll('[data-group-panel]');
+  const panels = document.querySelectorAll('.group-panel');
+
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    const targetId = button.dataset.groupPanel;
+
+    buttons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.id !== targetId;
+    });
+  }));
+});
