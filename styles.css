@@ -302,6 +302,11 @@ h1, h2, h3 {
   border: 1px solid var(--line);
   background: var(--panel);
 }
+.game-card--plain {
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
 .game-icon {
   display: grid;
   place-items: center;
