@@ -48,13 +48,13 @@
   height: 245px;
   margin: auto;
   border: 5px solid var(--yellow);
-  border-radius: 50%;
+  border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 0 0 10px #202624;
 }
 .home-logo span {
   display: block;
-  margin: -5px 0 14px;
+  margin: 5px 0 14px;
   color: var(--white);
   font-family: Georgia, serif;
   font-size: 40px;
