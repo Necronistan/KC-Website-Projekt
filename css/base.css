@@ -1,0 +1,117 @@
+:root {
+  --black: #101313;
+  --panel: #191d1d;
+  --panel-light: #222726;
+  --line: #383e3a;
+  --white: #f5f5ef;
+  --muted: #aeb5b0;
+  --yellow: #efe51c;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font: 15px/1.6 Arial, Helvetica, sans-serif;
+}
+.wrap {
+  width: min(1064px, calc(100% - 56px));
+  margin-right: auto;
+  margin-left: auto;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 76px;
+  background: #151919;
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1120px, 100%);
+  height: 100%;
+  margin: auto;
+  padding: 0 28px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  line-height: 1;
+  text-decoration: none;
+}
+.logo img {
+  width: 41px;
+  height: 41px;
+  border: 2px solid var(--yellow);
+  border-radius: 4px;
+  object-fit: cover;
+}
+.logo b {
+  display: block;
+  font-size: 18px;
+  letter-spacing: .4px;
+}
+.logo small {
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: 1.25px;
+}
+.nav {
+  display: flex;
+  gap: 26px;
+}
+.nav a {
+  padding: 27px 0 24px;
+  border-bottom: 3px solid transparent;
+  color: #d0d5d0;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav a:hover, .nav a.active {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  color: var(--white);
+  font-size: 25px;
+}
+.section-label {
+  margin: 0 0 9px;
+  color: var(--yellow);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.primary {
+  background: var(--yellow);
+  color: #161815;
+}
+.primary:hover {
+  background: #fff35a;
+}

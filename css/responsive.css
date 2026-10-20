@@ -1,0 +1,152 @@
+@media (max-width: 760px) {
+  .wrap {
+    width: min(100% - 40px, 1064px);
+  }
+  .header-inner {
+    padding: 0 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .nav.open {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: 8px 20px 16px;
+    border-bottom: 1px solid var(--line);
+    background: #151919;
+  }
+  .nav a {
+    padding: 10px 0;
+  }
+  .home-hero {
+    min-height: 590px;
+    padding: 63px 25px;
+    align-items: flex-start;
+  }
+  .home-copy h1 {
+    font-size: 39px;
+  }
+  .home-logo {
+    right: -12px;
+    bottom: 10px;
+    width: 230px;
+    opacity: .4;
+  }
+  .home-logo img {
+    width: 185px;
+    height: 185px;
+  }
+  .home-logo span {
+    font-size: 30px;
+  }
+  .home-links {
+    grid-template-columns: 1fr;
+    padding-top: 38px;
+    padding-bottom: 55px;
+  }
+  .home-links a {
+    min-height: 145px;
+  }
+  .page-main {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .about-layout, .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .about-logo img {
+    width: 190px;
+  }
+  .values li {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-list article {
+    grid-template-columns: 60px 1fr;
+    gap: 13px;
+  }
+  .event-time {
+    grid-column: 2;
+  }
+  .contact-box {
+    max-width: 355px;
+  }
+  .team-section, .join-section, .rules-section {
+    margin-top: 55px;
+    padding-top: 42px;
+  }
+  .team-grid, .steps, .application-steps, .cup-home-links, .hall-of-fame {
+    grid-template-columns: 1fr;
+  }
+  .cup-nav {
+    top: 76px;
+    margin-top: -55px;
+    margin-bottom: 30px;
+  }
+  .cup-nav > a, .cup-nav-item > a, .cup-nav-label {
+    padding: 11px 6px;
+    font-size: 10px;
+  }
+  .cup-subnav {
+    right: 0;
+    left: auto;
+    min-width: 170px;
+  }
+  .group-switcher {
+    display: flex;
+    width: 100%;
+    margin-top: 28px;
+  }
+  .group-switcher button {
+    flex: 1;
+    padding: 11px 6px;
+    font-size: 11px;
+  }
+  .cup-hero {
+    padding-top: 10px;
+  }
+  .cup-hero::after {
+    top: 6px;
+    font-size: 120px;
+  }
+  .cup-section {
+    padding-top: 48px;
+  }
+  .cup-rules, .cup-bracket {
+    margin-top: 52px;
+    padding-top: 42px;
+  }
+  .bracket {
+    grid-template-columns: 210px 210px 210px;
+  }
+  .bracket-group .bracket {
+    grid-template-columns: 210px 210px;
+  }
+  .rules li {
+    grid-template-columns: 30px 1fr;
+    gap: 5px 10px;
+  }
+  .rules li span {
+    grid-column: 2;
+  }
+  footer {
+    display: block;
+    padding: 20px 25px;
+  }
+  footer span, footer a {
+    display: block;
+    margin: 4px 0;
+  }
+}

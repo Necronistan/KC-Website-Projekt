@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Turnierbaum des Knights Club Cup" />
     <title>KCC 9 | Turnierbaum</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -33,14 +33,16 @@
         <a href="kcc.html">Home</a>
         <a href="kcc-anmeldung.html">Anmeldung</a>
         <a href="kcc-regelwerk.html">Regelwerk</a>
-        <a class="active" href="kcc-turnierbaum.html">Turnierbaum</a>
+        <div class="cup-nav-item" role="group" aria-label="Turnierbaum" tabindex="0">
+          <span class="cup-nav-label active">Turnierbaum</span>
+          <div class="cup-subnav">
+            <a href="kcc-turnierbaum-gruppe-1.html">Gruppe 1</a>
+            <a href="kcc-turnierbaum-gruppe-2.html">Gruppe 2</a>
+            <a href="kcc-turnierbaum-gruppe-3.html">Gruppe 3</a>
+          </div>
+        </div>
         <a href="hall-of-fame.html">Hall of Fame</a>
       </nav>
-      <nav class="cup-2nav" aria-label="Secondarynavigation">
-          <a href="kcc-turnierbaum-gruppe-1.html">Gruppe 1</a>
-          <a href="kcc-turnierbaum-gruppe-2.html">Gruppe 2</a>
-          <a href="kcc-turnierbaum-gruppe-3.html">Gruppe 3</a>
-        </nav>
       <section class="cup-page-heading">
         <p class="section-label">KCC 9</p>
         <h1 class="page-title">Turnierbaum</h1>
@@ -50,18 +52,7 @@
         <div class="bracket-groups">
           <section id="bracket-gruppe-1" class="bracket-group group-panel" role="tabpanel" aria-labelledby="gruppe-1">
             <h2 id="gruppe-1">Gruppe 1</h2>
-            <div class="bracket" aria-label="Turnierbaum Gruppe 1">
-              <div class="bracket-round">
-                <b>HALBFINALE</b>
-                <span>Team 1 <i>vs.</i> Team 2</span>
-                <span>Team 3 <i>vs.</i> Team 4</span>
-              </div>
-              <div class="bracket-round final-round">
-                <b>FINALE</b>
-                <span>Sieger HF 1 <i>vs.</i> Sieger HF 2</span>
-                <strong>GRUPPENSIEGER 1</strong>
-              </div>
-            </div>
+            
           </section>
           <section id="bracket-gruppe-2" class="bracket-group group-panel" role="tabpanel" aria-labelledby="gruppe-2" hidden>
             <h2 id="gruppe-2">Gruppe 2</h2>
